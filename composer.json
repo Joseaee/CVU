@@ -1,0 +1,36 @@
+{
+    "name": "cvu/content",
+    "description": "Es un sistema digital diseñado para administrar y supervisar todos los aspectos del proceso electoral.",
+    "type": "project",
+    "require": {
+        "setasign/fpdf": "^1.8",
+        "php": "^7.4",
+        "twbs/bootstrap": "^5.3",
+        "components/jquery": "^3.7",
+        "components/font-awesome": "*"
+    },
+    "license": "001",
+    "autoload": {
+        "psr-4": {
+            "Cvu\\Content\\": "content/"
+        }
+    },
+    "authors": [
+        {
+            "name": "UPTAEB seccion T4 2024"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "cp -R vendor/twbs/bootstrap/dist public/",
+            "cp -R vendor/components/jquery/jquery.min.js public/js/",
+            "cp -R vendor/components/font-awesome/* public/font-awesome/"
+        ],
+        "post-update-cmd": [
+            "cp -R vendor/twbs/bootstrap/dist public/",
+            "cp -R vendor/components/jquery/jquery.min.js public/js/",
+            "cp -R vendor/components/font-awesome/* public/font-awesome/"
+        ]
+    },
+    "minimum-stability": "beta"
+}
