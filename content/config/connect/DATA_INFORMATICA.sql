@@ -1,4 +1,4 @@
-﻿INSERT INTO `tblpnf`(`codigo`, `nombre`) VALUES ('PNFINF', 'INFORMATICA')
+﻿INSERT INTO `tblpnf`(`codigo`, `nombre`) VALUES ('PNFINF', 'INFORMATICA');
 
 
 INSERT INTO `tblestudiante`(`cedula`, `nombre`, `apellido`, `pnf`) VALUES
