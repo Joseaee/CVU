@@ -1,0 +1,201 @@
+body {
+    background-color: var(--light-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__form {
+    background-color: var(--white);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 18px rgba(0,0,0,.6);
+    overflow: hidden;
+    animation: fadeIn .5s ease-out forwards;
+}
+
+.part__blue {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: var(--blue); 
+    background-image: linear-gradient(to bottom, var(--blue), var(--dark-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.part__blue img {
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    top: 20%;
+}
+
+.part__blue h1 {
+    position: absolute;
+    letter-spacing: 1px;
+    font-size: 34px;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.part__blue p {
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    color: var(--light-blue);
+    opacity: .9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.part__blue .bx-laptop {
+    position: absolute;
+    font-size: 200px;
+    color: var(--light-blue);
+    opacity: .2;
+    transform: rotate(-25deg);
+    bottom: -80px;
+    left: -80px;
+}
+
+.part__blue .bxs-graduation {
+    position: absolute;
+    font-size: 200px;
+    color: var(--light-blue);
+    opacity: .2;
+    transform: rotate(25deg);
+    bottom: -80px;
+    right: -80px;
+}
+
+.part__white {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.part__white img {
+    display: none;
+    width: 120px;
+    height: 100px;
+    top: 20%;
+}
+
+.part__white h2 {
+    font-size: 28px;
+    color: var(--blue);
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 16px auto;
+}
+
+.part__white .input__login {
+    position: relative;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 4px auto;
+}
+
+.part__white input {
+    margin-left: 20px;
+    background-color: #eee;
+    position: relative;
+    border: none;
+    padding: 6px 16px;
+    box-shadow: 0 0 4px #aaa;
+    border-radius: 20px;
+    color: var(--text);
+    transition: .1s ease-in;
+}
+
+.part__white input:focus, .part__white input:active {
+    outline: none;
+    box-shadow: 0 0 4px var(--dark-blue);
+}
+
+.part__white i {
+    font-size: 20px;
+    position: absolute;
+    top: 50%px;
+    left: 0;
+    z-index: 1;
+    color: var(--blue);
+}
+
+.input__login {
+    display: flex;
+    position: relative;
+    transition: all .2s ease;
+}
+
+.input__login .tooltip {
+    background-color: #888;;
+    color: #fff;
+    position: absolute;
+    top: 14px;
+    left: 35%;
+    padding: 05px 8px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease;
+}
+
+.input__login .tooltip::before {
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 8px;
+    background-color: #888;
+    bottom: -3px;
+    left: 45%;
+    transform: translate(-20%) rotate(45deg);
+    transition: all .3s ease;
+}
+
+.input__login:hover .tooltip,
+.input__login:focus .tooltip {
+    top: -22px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+@media screen and (max-width: 840px) {
+    .part__white img {
+        display: block;
+    }
+    .part__blue {
+        display: none;
+    }
+    .part__white {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5); /* Escala inicial */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Escala final */
+    }
+}

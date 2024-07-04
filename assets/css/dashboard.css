@@ -1,0 +1,228 @@
+.contenedor__dashboard {
+    width: 100%;
+    display: flex;
+    background-color: var(--light-blue);
+}
+
+/* DASHBOARD -------------------------------- */
+.content__dashboard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.top__section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.modulo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    height: 100px;
+    box-shadow: 0 0 10px rgba(50,50,50,.5);
+    text-decoration: none;
+    overflow: hidden;
+    transition: .3s;
+    border-radius: 4px;
+    gap: 8px;
+    animation: fadeIn .5s ease-out forwards;
+}
+
+.modulo:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    background-color: var(--blue);
+    top: -30px;
+    left: -140px;
+    transform: rotate(-45deg);
+}
+
+.modulo__icon {
+    display: flex;
+    font-size: 60px;
+    color: var(--blue);
+}
+
+.modulo__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modulo__info h4 {
+    color: var(--black);
+    font-size: 20px;
+    letter-spacing: .8px;
+}
+
+.modulo__info span {
+    color: var(--text);
+    font-size: 18px;
+}
+
+.modulo__icon__fondo {
+    bottom: -40px;
+    right: -40px;
+    position: absolute;
+    font-size: 100px;
+    transform: rotate(25deg);
+    color: var(--dark-blue);
+    opacity: .2;
+}
+
+.modulo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px var(--blue);
+}
+
+/* BREADCRUMB --------------------------------------- */
+
+.breadcrumb {
+    padding: 16px 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(50,50,50,.5);
+    animation: fadeIn .5s ease-out forwards;
+}
+
+.breadcrumb h1 {
+    letter-spacing: 1px;
+    color: var(--dark-blue);
+}
+
+.breadcrumb h4 {
+    color: var(--text);
+}
+
+.breadcrumb h4 i {
+    color: #F1C40F;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,.5));
+    transform: rotate(45deg);
+}
+
+.modulo_esp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    height: 100px;
+    box-shadow: 0 0 10px rgba(50,50,50,.5);
+    text-decoration: none;
+    overflow: hidden;
+    transition: .3s;
+    border-radius: 4px;
+    gap: 8px;
+    animation: fadeIn .5s ease-out forwards;
+}
+
+.modulo_esp .modulo__icon {
+    display: flex;
+    font-size: 60px;
+    color: var(--white);
+}
+
+.modulo_esp .modulo__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modulo_esp .modulo__info h4 {
+    color: var(--white);
+    font-size: 20px;
+    letter-spacing: .8px;
+}
+
+.modulo_esp .modulo__info span {
+    color: var(--white);
+    font-size: 18px;
+}
+
+.modulo_esp .modulo__icon__fondo {
+    bottom: -40px;
+    right: -40px;
+    position: absolute;
+    font-size: 100px;
+    transform: rotate(25deg);
+    color: var(--light-blue);
+    opacity: .2;
+}
+
+.modulo_esp:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    background-color: var(--white);
+    top: -30px;
+    left: -140px;
+    transform: rotate(-45deg);
+}
+
+.modulo_esp:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px var(--blue);
+}
+
+.slider__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn__slider {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: var(--text);
+    border: none;
+}
+
+.btn__slider:hover, .btn__slider.active {
+    background-color: var(--blue);
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.slider.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5); /* Escala inicial */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Escala final */
+    }
+}
