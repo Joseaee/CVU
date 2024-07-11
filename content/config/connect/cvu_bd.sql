@@ -46,7 +46,7 @@ ENGINE = InnoDB;
 -- Tabla `cvu_bd`.`tblEleccion`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `cvu_bd`.`tblEleccion` (
-  `codigo` VARCHAR(10) NOT NULL,
+  `codigo` VARCHAR(28) NOT NULL,
   `nombre` VARCHAR(45) NOT NULL,
   `fecha` DATE NOT NULL,
   `estado` TINYINT(1) NOT NULL DEFAULT 1,

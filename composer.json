@@ -21,13 +21,33 @@
         }
     ],
     "scripts": {
+        "pre-install-cmd": [
+            "mkdir public",
+            "mkdir public\\css",
+            "mkdir public\\js",
+            "mkdir public\\bootstrap",
+            "mkdir public\\bootstrap\\css",
+            "mkdir public\\bootstrap\\js",
+            "mkdir public\\font-awesome"
+        ],
+        "pre-update-cmd": [
+            "if not exist public mkdir public",
+            "if not exist public\\css mkdir public\\css",
+            "if not exist public\\js mkdir public\\js",
+            "if not exist public\\bootstrap mkdir public\\bootstrap",
+            "if not exist public\\bootstrap\\css mkdir public\\bootstrap\\css",
+            "if not exist public\\bootstrap\\js mkdir public\\bootstrap\\js",
+            "if not exist public\\font-awesome mkdir public\\font-awesome"
+        ],
         "post-install-cmd": [
-            "cp -R vendor/twbs/bootstrap/dist public/",
+            "cp -R vendor/twbs/bootstrap/dist/css/bootstrap.min.css public/bootstrap/css",
+            "cp -R vendor/twbs/bootstrap/dist/js/bootstrap.min.js public/bootstrap/js",
             "cp -R vendor/components/jquery/jquery.min.js public/js/",
             "cp -R vendor/components/font-awesome/* public/font-awesome/"
         ],
         "post-update-cmd": [
-            "cp -R vendor/twbs/bootstrap/dist public/",
+            "cp -R vendor/twbs/bootstrap/dist/css/bootstrap.min.css public/bootstrap/css",
+            "cp -R vendor/twbs/bootstrap/dist/js/bootstrap.min.js public/bootstrap/js",
             "cp -R vendor/components/jquery/jquery.min.js public/js/",
             "cp -R vendor/components/font-awesome/* public/font-awesome/"
         ]
