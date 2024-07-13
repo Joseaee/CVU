@@ -33,7 +33,7 @@ class EleccionModel extends ConnectDB{
 
         try{
 
-            $consultarElecciones = $this->conex->prepare("SELECT * FROM tbleleccion e WHERE e.estado = 1");
+            $consultarElecciones = $this->conex->prepare("SELECT * FROM tbleleccion e WHERE e.estado = 1;");
             $consultarElecciones->execute();
             $respuesta = $consultarElecciones->fetchAll(PDO::FETCH_ASSOC);
 
@@ -53,7 +53,7 @@ class EleccionModel extends ConnectDB{
     /**
      * Valida los valores de la eleccion.
      *
-     * @return array Respuesta con éxito o error en la inserción.
+     * @return array Respuesta con éxito o error en la validacion.
      */
     public function validarEleccion($nombre, $fecha){
 
@@ -108,9 +108,9 @@ class EleccionModel extends ConnectDB{
         try{
             $this->conex->beginTransaction();
 
-            $this->codigoEleccion =   date('Ymdhi', time()).'eleccion:'.rand(100,999);
+            $this->codigoEleccion = date('YmdHis', time()).'eleccion:'.rand(100,999);
 
-            $insertarEleccion = $this->conex->prepare("INSERT INTO tbleleccion (codigo, nombre, fecha) VALUES (?, ?, ?)");
+            $insertarEleccion = $this->conex->prepare("INSERT INTO tbleleccion (codigo, nombre, fecha) VALUES (?, ?, ?);");
             $insertarEleccion->bindValue(1, $this->codigoEleccion);
             $insertarEleccion->bindValue(2, $this->nombreEleccion);
             $insertarEleccion->bindValue(3, $this->fechaEleccion);
@@ -132,7 +132,7 @@ class EleccionModel extends ConnectDB{
      *
      * @param string $id El identificador de la eleccion.
      * 
-     * @return array Información sobre la existencia de la eleccion y si tiene asientos, 
+     * @return array Información sobre la existencia de la eleccion, 
      *               o mensajes de error si no existe o si el ID no es válido, 
      *               o información de error en caso de excepción.
      */
