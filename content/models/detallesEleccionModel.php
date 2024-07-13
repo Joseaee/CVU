@@ -196,6 +196,7 @@ class DetallesEleccionModel extends ConnectDB{
     private function insertarDetallesEleccion(){
 
         try{
+
             $this->conex->beginTransaction();
 
             $this->codigoDetallesEleccion = date('YmdHis', time()).'detalleElec:'.rand(100,999);
@@ -234,23 +235,23 @@ class DetallesEleccionModel extends ConnectDB{
 
             if(preg_match_all($this->expCodigoDetallesEleccion, $id)){
 
-                $consultarEleccion = $this->conex->prepare("SELECT * FROM tbldetalleeleccion de WHERE de.codigo = ? AND de.estado = 1;");
-                $consultarEleccion->bindValue(1, $id);
-                $consultarEleccion->execute();
-                $respuesta = $consultarEleccion->fetch(PDO::FETCH_ASSOC);
+                $consultarDetallesEleccion = $this->conex->prepare("SELECT * FROM tbldetalleeleccion de WHERE de.codigo = ? AND de.estado = 1;");
+                $consultarDetallesEleccion->bindValue(1, $id);
+                $consultarDetallesEleccion->execute();
+                $respuesta = $consultarDetallesEleccion->fetch(PDO::FETCH_ASSOC);
 
                 if($respuesta == ''){
 
-                    return array("status" => 'error', "message" => 'La eleccion seleccionada no existe.', "data" => false, "statusCode" => 404);
+                    return array("status" => 'error', "message" => 'Los detalles de eleccion seleccionado no existe.', "data" => false, "statusCode" => 404);
                 }
 
                 $this->codigoDetallesEleccion = $id;
 
-                return array("status" => 'success', "message" => 'La eleccion seleccionada es valida y existe.', "data" => true, "statusCode" => 200);
+                return array("status" => 'success', "message" => 'Los detalles de eleccion seleccionado es valida y existe.', "data" => true, "statusCode" => 200);
             }
             else{
 
-                return array("status" => 'error', "message" => 'El codigo de elección no es valido.', "data" => false, "statusCode" => 412);
+                return array("status" => 'error', "message" => 'El codigo de detalles de eleccion no es valido.', "data" => false, "statusCode" => 412);
             }
         }
         catch(PDOException $error){
@@ -273,7 +274,7 @@ class DetallesEleccionModel extends ConnectDB{
             $consultarDetallesEleccion->execute();
             $respuesta = $consultarDetallesEleccion->fetch(PDO::FETCH_ASSOC);  
 
-            return array("status" => 'success', "message" => 'Se consulto la eleccion'. $this->codigoDetallesEleccion.'.', "data" => $respuesta, "statusCode" => 200);
+            return array("status" => 'success', "message" => 'Se consulto los detalles de eleccion'. $this->codigoDetallesEleccion.'.', "data" => $respuesta, "statusCode" => 200);
         }
         catch(PDOException $error){
 
@@ -312,7 +313,7 @@ class DetallesEleccionModel extends ConnectDB{
 
             $this->conex->commit();
 
-            return array("status" => 'success', "message" => 'La eleccion del codigo'.$this->codigoDetallesEleccion.' fue actulizada exitosamente', "data" => '', "statusCode" => 200);
+            return array("status" => 'success', "message" => 'Los detalels de eleccion del codigo'.$this->codigoDetallesEleccion.' fue actulizado exitosamente', "data" => '', "statusCode" => 200);
         }
         catch(PDOException $error){
 
@@ -347,14 +348,14 @@ class DetallesEleccionModel extends ConnectDB{
 
             if(!$respuesta){
 
-                return array("status" => 'error', "message" => 'La elección no pudo ser borrada porque ya fue iniciada o ya finalizo.', "data" => false, "statusCode" => 404);
+                return array("status" => 'error', "message" => 'Los detalles de eleccion no pudo ser borrado porque ya fue iniciada las elecciones o ya finalizaron.', "data" => false, "statusCode" => 404);
             }
 
             $eliminarEleccion = $this->conex->prepare("UPDATE tbldetalleeleccion de SET de.estado = 0 WHERE de.codigo = ? AND de.estado = 1;");
             $eliminarEleccion->bindValue(1, $this->codigoDetallesEleccion); 
             $eliminarEleccion->execute(); 
 
-            return array("status" => 'success', "message" => 'La eleccion del codigo'.$this->codigoDetallesEleccion.' fue eliminada exitosamente', "data" => '', "statusCode" => 200);
+            return array("status" => 'success', "message" => 'Los detalles de eleccion del codigo'.$this->codigoDetallesEleccion.' fue eliminado exitosamente', "data" => '', "statusCode" => 200);
         }
         catch(PDOException $error){
 

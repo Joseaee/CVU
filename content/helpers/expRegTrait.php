@@ -16,10 +16,12 @@ trait expRegTrait {
 
 	//ELECCION
 	public $expCodigoEleccion =  '/^\d{8}\d{6}eleccion:\d{3}$/';
-	public $expNombreEleccion = '/^[0-9a-zA-ZÀ-ÿ\u00f1\u00d1\!\¡¿?;\ ]{1,45}$/';
+	public $expNombreEleccion = '/^[0-9a-zA-ZÀ-ÿ\u00f1\u00d1\.\,\!\¡¿?;\ ]{1,45}$/';
 
 	//DETALLES ELECCION
 	public $expCodigoDetallesEleccion = '/^\d{8}\d{6}detalleElec:\d{3}$/';
-	//public $expNombreEleccion = '/^[0-9a-zA-ZÀ-ÿ\u00f1\u00d1\!\¡¿?;\ ]{1,45}$/';
-	
+
+	//CENTRO VOTACION
+	public $expCodigoCentroVotacion = '/^\d{8}\d{6}cv:\d{3}$/';
+	public $expNombreCentroVotacion = '/^[0-9a-zA-ZÀ-ÿ\u00f1\u00d1\.\,\!\¡¿?;\ ]{1,45}$/';
 }

@@ -15,7 +15,7 @@ if(isset($_GET['url'])){
 
 			$r = $detallesEleccionModel->existeDetallesEleccion($_POST['existeDetallesEleccion']);
 			if($r['status'] != 'success') $error = true;
-			$existeEleccion = $r['data'];
+			$existeDetallesEleccion = $r['data'];
 		}
 
 		if(isset($_POST['existeEleccion']) && !$error){
@@ -44,27 +44,27 @@ if(isset($_GET['url'])){
 			if($r['status'] != 'success') $error = true;
 		}
 
-		if(isset($_POST['insertarDetallesEleccion']) && isset($validaEleccion) && !$error){
+		if(isset($_POST['insertarDetallesEleccion']) && isset($existeEleccion) && isset($validaEleccion)  && !$error){
 
-			if($validaEleccion) $r = $detallesEleccionModel->getInsertarDetallesEleccion();
+			if($existeEleccion && $validaEleccion) $r = $detallesEleccionModel->getInsertarDetallesEleccion();
 			if($r['status'] != 'success') $error = true;
 		}
 
-		if(isset($_POST['consultarDetallesEleccionSeleccionada']) && isset($existeEleccion) && !$error){
+		if(isset($_POST['consultarDetallesEleccionSeleccionada']) && isset($existeDetallesEleccion) && !$error){
 
-			if($existeEleccion) $r = $detallesEleccionModel->consultarDetallesEleccionSeleccionada();
+			if($existeDetallesEleccion) $r = $detallesEleccionModel->consultarDetallesEleccionSeleccionada();
 			if($r['status'] != 'success') $error = true;
 		}
 
-		if(isset($_POST['actualizarDetallesEleccion']) && isset($validaEleccion) && isset($existeEleccion) && !$error){
+		if(isset($_POST['actualizarDetallesEleccion']) && isset($existeDetallesEleccion) && isset($existeEleccion) && isset($validaEleccion) && !$error){
 
-			if($existeEleccion && $validaEleccion) $r = $detallesEleccionModel->getActualizarDetallesEleccion();
+			if($existeDetallesEleccion && $existeEleccion && $validaEleccion) $r = $detallesEleccionModel->getActualizarDetallesEleccion();
 			if($r['status'] != 'success') $error = true;
 		}
 
-		if(isset($_POST['eliminarDetallesEleccion']) && isset($existeEleccion) && !$error){
+		if(isset($_POST['eliminarDetallesEleccion']) && isset($existeDetallesEleccion) && !$error){
 
-			if($existeEleccion) $r = $detallesEleccionModel->getEliminarDetallesEleccion();
+			if($existeDetallesEleccion) $r = $detallesEleccionModel->getEliminarDetallesEleccion();
 			if($r['status'] != 'success') $error = true;
 		}
 

@@ -110,12 +110,12 @@ ENGINE = InnoDB;
 -- Tabla `cvu_bd`.`tblCentroVotacion`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `cvu_bd`.`tblCentroVotacion` (
-  `codigo` VARCHAR(10) NOT NULL,
+  `codigo` VARCHAR(20) NOT NULL,
   `nombre` VARCHAR(45) NOT NULL,
   `presidente` VARCHAR(45) NOT NULL,
   `secretario` VARCHAR(45) NOT NULL,
   `lugar` VARCHAR(45) NOT NULL,
-  `idEleccion` VARCHAR(10) NOT NULL,
+  `idEleccion` VARCHAR(29) NOT NULL,
   `estado` TINYINT(1) NOT NULL DEFAULT 1,
   PRIMARY KEY (`codigo`),
   INDEX `FK_CentroEleccion_idx` (`idEleccion` ASC),
