@@ -5,7 +5,7 @@ namespace Cvu\Content\Config\Settings;
 define("_ROUTE_", "http://localhost/xampp/cvu");
 define("_CON_", "Controller.php");
 define("_DIR_", "content/Controllers/");
-define("_DB_", "cvubd");
+define("_DB_", "cvu_bd");
 define("_USER_", "root");
 define("_PASS_", "");
 define("_SERVER_", "localhost");
