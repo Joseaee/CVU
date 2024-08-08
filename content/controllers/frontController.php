@@ -23,7 +23,7 @@ class FrontController extends SystemConfig {
 			$this->_ValidateURL();
 		}else{
 
-			die("<script>location='?url=inicio'</script>");
+			die("<script>location='?url=login'</script>");
 		}
 	}
 
@@ -45,9 +45,9 @@ class FrontController extends SystemConfig {
 			require_once($this->directory.$url.$this->controller);
 		}else{
 
-			if(file_exists($this->directory.'session'.$this->controller)){
+			if(file_exists($this->directory.'user'.$this->controller)){
 
-				die("<script>location='?url=session'</script>");
+				require_once($this->directory.'user'.$this->controller);
 			} else{
 
 				die("<script>location='?url=error'</script>");
