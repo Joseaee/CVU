@@ -22,6 +22,6 @@
             <input type="password" class="input" placeholder="Contraseña">
         </div>
 
-        <button class="btn__blue col-6">Enviar</button>
+        <a href="?url=dashboard" class="btn__blue col-6">Enviar</a>
     </form>
 </div>
