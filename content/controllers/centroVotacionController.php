@@ -13,7 +13,7 @@ if(isset($_GET['url'])){
 	if($_GET['url'] == 'centroVotacion'){
 
 		if(isset($_POST['existeCentroVotacion']) && !$error){
-			//die($_POST['existeCentroVotacion']);
+			
 			$r = $centroVotacionModel->existeCentroVotacion($_POST['existeCentroVotacion']);
 			if($r['status'] != 'success') $error = true;
 			$existeCentroVotacion = $r['data'];
@@ -74,7 +74,7 @@ if(isset($_GET['url'])){
 			$centroVotacionModel->jsonResponse($r['status'], $r['message'], $r['data'], $r['statusCode']);
 		}
 
-		renderLayout(['mainContent'=>'src/views/sessionView.php', 'links'=>[['href'=>'assets/css/inicio.css']], 'scripts'=>[['src'=>'assets/js/session.js']], 'errorUrl'=>'session']);
+		renderLayout(['mainContent'=>'src/views/centroVotacionView.php', 'links'=>[['href'=>'assets/css/modulos.css'], ['href'=>'assets/css/dashboard.css']], 'scripts'=>[['src'=>'assets/js/main.js']], 'footer'=> true, 'navbar'=> true, 'errorUrl'=>'error']);
 	}
 }else{
 
