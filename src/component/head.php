@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo(isset($params['title']) ? $params['title']: 'Sistema Electoral UPTAEB');?></title>
+    <link rel="stylesheet" href="assets/icons/css/boxicons.min.css">
+    <link href="assets/css/estilos.css" rel="stylesheet"/>
     <link rel="icon" type="image/png" href="assets/imgs/icons/favicon.png"/> 
     <link href="public/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="assets/css/sweetalert2.min.css" rel="stylesheet"/>
@@ -23,5 +25,4 @@
         }
     ?>
 </head>
-<body class="d-flex flex-column" style="height: 100vh;">
-    <main>
+<body>
