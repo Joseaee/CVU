@@ -56,7 +56,7 @@
         </li>
 
         <li class="lateral__li">
-            <a href="?url=eleccionesDetalles" class="lateral__link" title="Detalle de Elecciones">
+            <a href="?url=detallesEleccion" class="lateral__link" title="Detalle de Elecciones">
                 <i class='bx bx-detail'></i> <span>Detalle de Elecciones</span>
             </a>
         </li>

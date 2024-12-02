@@ -7,7 +7,7 @@ use Cvu\Content\helpers\HttpResponseTrait;
 use \PDO;
 use PDOException;
 
-class DetallesEleccionModel extends ConnectDB{
+class detalleEleccionesModel extends ConnectDB{
 
     use expRegTrait;
     use HttpResponseTrait;
