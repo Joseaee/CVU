@@ -2,7 +2,7 @@
 
 namespace Cvu\Content\helpers;
 
-trait HttpResponseTrait {
+trait httpResponseTrait {
     
     /**
      * Enviar una respuesta JSON.

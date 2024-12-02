@@ -167,7 +167,6 @@ body {
 .nav__lateral {
     position: relative;
     width: 64px;
-    margin-top: 58px;
     background-color: var(--white);
     box-shadow: 2px -2px 4px rgba(125,125,125,.5);
     white-space: nowrap;

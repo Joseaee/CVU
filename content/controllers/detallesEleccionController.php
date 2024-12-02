@@ -1,9 +1,9 @@
 <?php 
 
-use Cvu\Content\Models\DetallesEleccionModel;
+use Cvu\Content\Models\detalleEleccionesModel;
 require_once "src/layout/layout.php";
 
-$detallesEleccionModel = new DetallesEleccionModel(); 
+$detallesEleccionModel = new detalleEleccionesModel(); 
 
 if(isset($_GET['url'])){
 
@@ -73,7 +73,7 @@ if(isset($_GET['url'])){
 			$detallesEleccionModel->jsonResponse($r['status'], $r['message'], $r['data'], $r['statusCode']);
 		}
 
-		renderLayout(['mainContent'=>'src/views/sessionView.php', 'links'=>[['href'=>'assets/css/inicio.css']], 'scripts'=>[['src'=>'assets/js/session.js']], 'errorUrl'=>'session']);
+		renderLayout(['mainContent'=>'src/views/detalleEleccionesView.php', 'links'=>[['href'=>'assets/css/modulos.css'], ['href'=>'assets/css/dashboard.css']], 'scripts'=>[['src'=>'assets/js/main.js']], 'footer'=> true, 'navbar'=> true, 'errorUrl'=>'error']);
 	}
 }else{
 

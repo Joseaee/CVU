@@ -1,4 +1,7 @@
-<div class="contenedor__dashboard mt-4">
+<div class="contenedor__dashboard">
+<?php
+        require_once 'src/component/menu_lateral.php'
+    ?>
     <section class="content__dashboard">
         <section class="top__section row my-5">
             <div class="breadcrumb col-lg-11 col-md-8 col-sm-10 col-10 mt-5">
