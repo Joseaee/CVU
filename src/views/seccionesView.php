@@ -22,24 +22,22 @@
 
             <div class="tabla__modulo col-lg-10 col-md-8 col-sm-10 col-10">
                 <div class="table-responsive">
-                    <button class="btn__borrar my-2" title="Exportar PDF"><i class='bx bxs-file-pdf'></i></button>
-                    <button class="btn__excel my-2" title="Importar EXCEL"><i class='bx bxs-file'></i></button>
-                    <button class="btn__agregar float-end my-2" title="Agregar" id="Agregar" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Agregar <i class='bx bx-plus-circle'></i></button>
+                    <button class="btn__agregar float-end my-2 mx-1" title="Agregar" id="Agregar" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Agregar <i class='bx bx-plus-circle'></i></button>
+                    <button class="btn__pdf float-end my-2 mx-1" title="Exportar PDF"><i class='bx bxs-file-pdf'></i>Exportar PDF</button>
+                    <button class="btn__excel float-end my-2 mx-1" title="Importar EXCEL"><i class='bx bxs-file'></i>Importar Excel</button>
                     <table class="table mb-4">
                         <thead>
                             <tr class="header__titles">
-                                <th>Cedula</th>
-                                <th>Nombre</th>
-                                <th>Apellido</th>
+                                <th>Sección</th>
+                                <th>Trayecto</th>
                                 <th>Estado</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>28425445</td>
-                                <td>Hendherson</td>
-                                <td>Patiño</td>
+                                <td>4403</td>
+                                <td>IV</td>
                                 <td class="status1">Activo</td>
                                 <td>
                                     <button class="btn__mas" title="Detalles"><i class='bx bx-search-alt'></i></button>
@@ -49,9 +47,8 @@
                             </tr>
 
                             <tr>
-                                <td>30025415</td>
-                                <td>Manuel</td>
-                                <td>Gonzalez</td>
+                                <td>4403</td>
+                                <td>IV</td>
                                 <td class="status0">Inactivo</td>
                                 <td>
                                     <button class="btn__mas"><i class='bx bx-search-alt'></i></button>
