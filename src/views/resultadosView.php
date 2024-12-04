@@ -13,19 +13,19 @@
 
                     <div class="resultados__table">
                         <div class="candidatos__result">
-                            <img src="assets/img/Candidatos/Hendherson Patino.png" alt="Candidato">
+                            <img src="assets/img/Candidatos/Jose Escalona.png" alt="Candidato">
 
                             <div class="info">
-                                <h4>Hendherson Patiño</h4>
+                                <h4>Jose Escalona</h4>
                                 <h5>IN4403</h5>
                             </div>
 
                             <div class="barra__votacion">
-                                <div class="barra barra__uno">
+                                <div class="barra barra__cinco">
                                 </div>
                             </div>
 
-                            <span>63%</span>
+                            <span>31%</span>
                         </div>
                     </div>
 
@@ -43,7 +43,7 @@
                                 </div>
                             </div>
 
-                            <span>33%</span>
+                            <span>24%</span>
                         </div>
                     </div>
 
@@ -61,7 +61,7 @@
                                 </div>
                             </div>
 
-                            <span>13%</span>
+                            <span>18%</span>
                         </div>
                     </div>
 
@@ -79,25 +79,25 @@
                                 </div>
                             </div>
 
-                            <span>93%</span>
+                            <span>15%</span>
                         </div>
                     </div>
 
                     <div class="resultados__table">
                         <div class="candidatos__result">
-                            <img src="assets/img/Candidatos/Jose Escalona.png" alt="Candidato">
+                            <img src="assets/img/Candidatos/Hendherson Patino.png" alt="Candidato">
 
                             <div class="info">
-                                <h4>Jose Escalona</h4>
+                                <h4>Hendherson Patiño</h4>
                                 <h5>IN4403</h5>
                             </div>
 
                             <div class="barra__votacion">
-                                <div class="barra barra__cinco">
+                                <div class="barra barra__uno">
                                 </div>
                             </div>
 
-                            <span>50%</span>
+                            <span>12%</span>
                         </div>
                     </div>
                 </div>
