@@ -177,6 +177,11 @@ body {
     pointer-events: auto;
 }
 
+.login__form .part__white a {
+    text-decoration: none;
+    text-align: center;
+}
+
 @media screen and (max-width: 840px) {
     .part__white img {
         display: block;

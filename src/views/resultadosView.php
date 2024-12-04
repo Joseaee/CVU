@@ -17,7 +17,7 @@
 
                             <div class="info">
                                 <h4>Hendherson Patiño</h4>
-                                <h5>PSUV</h5>
+                                <h5>IN4403</h5>
                             </div>
 
                             <div class="barra__votacion">
@@ -35,7 +35,7 @@
 
                             <div class="info">
                                 <h4>Sabrina Colmenarez</h4>
-                                <h5>PSUV</h5>
+                                <h5>IN4403</h5>
                             </div>
 
                             <div class="barra__votacion">
@@ -53,7 +53,7 @@
 
                             <div class="info">
                                 <h4>Manuel Gonzalez</h4>
-                                <h5>PSUV</h5>
+                                <h5>IN4403</h5>
                             </div>
 
                             <div class="barra__votacion">
@@ -71,7 +71,7 @@
 
                             <div class="info">
                                 <h4>Gisel Martinez</h4>
-                                <h5>PSUV</h5>
+                                <h5>IN4403</h5>
                             </div>
 
                             <div class="barra__votacion">
@@ -89,7 +89,7 @@
 
                             <div class="info">
                                 <h4>Jose Escalona</h4>
-                                <h5>PSUV</h5>
+                                <h5>IN4403</h5>
                             </div>
 
                             <div class="barra__votacion">
