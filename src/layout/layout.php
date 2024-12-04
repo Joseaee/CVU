@@ -8,9 +8,14 @@
  * Finalmente, incluye el archivo de pie de página (`footer.php`).
  *
  * @param array $params Un arreglo asociativo que contiene los parámetros para renderizar el diseño.
- *                      - 'variables' (opcional): Un arreglo asociativo de variables para extraer.
- *                      - 'mainContent': La ruta al archivo de contenido principal a incluir.
+ *                      - 'variables' (opcional): Un arreglo asociativo de variables para extraer en variables con el nombre de la key.
+ * 						- 'title': El titulo de la pagina en la etiqueta title.	
+ * 						- 'links': Los archivos css que iran linkeados a la vista. Ejemplo: [rel => 'stylesheet', href => '', attr => ''].
+ * 						- 'navbar': Un valor booleano por si se necesita colocar el navbar.
+ *                      - 'mainContent': La ruta al archivo de la vista que ira como contenido principal a incluir.
  *                      - 'errorUrl': La URL a redirigir en caso de que el archivo de contenido principal no exista.
+ * 						- 'footer': Un valor booleano por si se necesita colocar el footer.
+ * 						- 'scripts': Los archivos scripts que iran linkeados a la vista. Ejemplo: [type => 'module', src => ''].
  *
  * @return void
  */

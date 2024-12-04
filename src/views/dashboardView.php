@@ -136,7 +136,7 @@
                     <i class='modulo__icon__fondo bx bx-select-multiple'></i>
                 </a>
 
-                <a href="?url=detalles" class="modulo col-lg-5 col-md-5 col-sm-6 col-10">
+                <a href="?url=detallesEleccion" class="modulo col-lg-5 col-md-5 col-sm-6 col-10">
                     <div class="modulo__icon">
                         <i class='bx bx-detail'></i>
                     </div>
