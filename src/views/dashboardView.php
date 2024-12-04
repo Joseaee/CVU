@@ -6,6 +6,7 @@
 
     <section class="content__dashboard">
         <section class="top__section row">
+
             <div class="breadcrumb col-lg-10 col-md-8 col-sm-10 col-10">
                 <h1><i class='bx bxs-dashboard'></i> Panel de Control</h1>
                 <h4>¡Hola, Hendherson! <i class='bx bxs-hand'></i></h4>
@@ -160,4 +161,76 @@
             </div>
         </section>
     </section>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"><i class="bx bx-search-alt"></i> Elector</h5>
+                <button type="button" class="btn__close" data-bs-dismiss="modal">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input__icon"><i class='bx bx-barcode'></i></span>
+                    </div>
+                    <input type="text" placeholder="Cedula">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input__icon"><i class="bx bx-user"></i></span>
+                    </div>
+                    <input type="text" placeholder="Nombre" disabled>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input__icon"><i class="bx bx-group"></i></span>
+                    </div>
+                    <input type="text" placeholder="Apellido" disabled>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input__icon"><i class="bx bx-book-content"></i></span>
+                    </div>
+                    <select name="select" disabled>
+                        <option value="value1">PNF1</option>
+                        <option value="value2">PNF2</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input__icon"><i class="bx bx-printer"></i></span>
+                    </div>
+                    <select name="select" disabled>
+                        <option value="value1">H15</option>
+                        <option value="value2">H11</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input__icon"><i class='bx bxs-edit'></i></span>
+                    </div>
+                    <select name="select" disabled>
+                        <option value="value1">Activo</option>
+                        <option value="value2">Inactivo</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Guardar</button>
+            </div>
+        </div>
+    </div>
 </div>

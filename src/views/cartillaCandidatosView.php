@@ -11,7 +11,7 @@
             <div class="info__candidato">
                 <h2>Hendherson Patiño</h2>
                 <h4>IN4403</h4>
-                <p>Juntos más fuertes, vota por tus voceros. Porque tu opinión cuenta.</p>
+                <p>Juntos más fuertes, vota por tus voceros. Porque tu opinión cuenta.</p>
                 <button>Votar</button>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="info__candidato">
                 <h2>Sabrina Colmenarez</h2>
                 <h4>IN4403</h4>
-                <p>Juntos más fuertes, vota por tus voceros. Porque tu opinión cuenta.</p>
+                <p>Juntos más fuertes, vota por tus voceros. Porque tu opinión cuenta.</p>
                 <button>Votar</button>
             </div>
         </div>
@@ -39,7 +39,7 @@
             <div class="info__candidato">
                 <h2>Manuel Gonzalez</h2>
                 <h4>IN4403</h4>
-                <p>Juntos más fuertes, vota por tus voceros. Porque tu opinión cuenta.</p>
+                <p>Juntos más fuertes, vota por tus voceros. Porque tu opinión cuenta.</p>
                 <button>Votar</button>
             </div>
         </div>
@@ -53,7 +53,7 @@
             <div class="info__candidato">
                 <h2>Gisel Martinez</h2>
                 <h4>IN4403</h4>
-                <p>Juntos más fuertes, vota por tus voceros. Porque tu opinión cuenta.</p>
+                <p>Juntos más fuertes, vota por tus voceros. Porque tu opinión cuenta.</p>
                 <button>Votar</button>
             </div>
         </div>
@@ -67,7 +67,7 @@
             <div class="info__candidato">
                 <h2>Jose Escalona</h2>
                 <h4>IN4403</h4>
-                <p>Juntos más fuertes, vota por tus voceros. Porque tu opinión cuenta.</p>
+                <p>Juntos más fuertes, vota por tus voceros. Porque tu opinión cuenta.</p>
                 <button>Votar</button>
             </div>
         </div>

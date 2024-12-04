@@ -2,6 +2,12 @@
     <button id="desplegar"><i class='icon__lateral bx bx-chevron-right'></i></button>
     <ul class="lateral__ul">
         <li class="lateral__li">
+            <button class="lateral__elector" title="Elector" id="Elector" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                <i class='bx bx-search-alt'></i> <span>Elector</span>
+            </button>
+        </li>
+
+        <li class="lateral__li">
             <a href="?url=dashboard" class="lateral__link" title="Panel de Control">
                 <i class='bx bxs-dashboard'></i> <span>Panel de Control</span>
             </a>
