@@ -250,6 +250,30 @@ hr {
     color: var(--blue);
 }
 
+.lateral__elector i {
+    font-size: 20px;
+}
+
+.lateral__elector {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--blue);
+	border-radius: 4px;
+	width: 100%;
+	background-color: var(--blue);
+    color: var(--white);
+	padding: 4px 12px;
+	gap: 4px;
+	transition: .25s;
+}
+
+.lateral__elector:hover {
+    color: var(--blue);
+	border: 1px solid var(--blue);
+	background-color: var(--white);
+}
+
 @media screen and (max-width: 470px) {
     #desplegar {
         display: none;
